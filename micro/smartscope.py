@@ -12,9 +12,6 @@ cv2.namedWindow('SmartScope', cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty('SmartScope', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 font = cv2.FONT_HERSHEY_SIMPLEX
 colour = (255, 64, 16) #BGR
-detected = 'epithelium'
-confidence = .9773
-
 
 def print_results(string):
     cv2.putText(frame, string, (25, 420), font, 0.75, colour, 1, cv2.LINE_AA)
