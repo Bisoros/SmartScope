@@ -38,11 +38,11 @@ while(True):
             print '\n'
             coord = ob[2]
             coord = rd(coord[0]), rd(coord[1]), rd(coord[2]), rd(coord[3])
-            cv2.ellipse(frame, (coord[0], coord[2]),(coord[1], coord[3]), 0, 0,
+            cv2.ellipse(frame, (coord[0], coord[1]),(coord[2], coord[3]), 0, 0,
                         360, (0, 255, 0), 3)
-            cv2.putText(frame, ob[0], (coord[0], coord[2]), fontface, .75, colour,
+            cv2.putText(frame, ob[0], (coord[0], coord[1]), fontface, .75, colour,
                         1, cv2.LINE_AA)
-            q.append((coord[0], coord[2]))
+            q.append((coord[0], coord[1]))
             if len(q) > 6000:
                 q.popleft()
 
