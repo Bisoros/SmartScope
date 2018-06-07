@@ -1,5 +1,4 @@
 from scripts.label_image import label_img
-import numpy as np
 import cv2
 
 # set up
